@@ -8,7 +8,9 @@ I want to be able to pull images off the camera in an automated fashion. This re
 
 Using [Android Bluetooth snooping](https://source.android.com/docs/core/connect/bluetooth/verifying_debugging#debugging-with-logs), I was able to find a couple packets that looked interesting. Particularly, "Send write command, Handle: 0x001e" with the value of `AT+WAKEPULSE=10\r\n`.
 
-```sudo gatttool -b {BT MAC address} --char-write-req -a 0x001e -n 41542b57414b4550554c53453d31300d0a``` 
+```
+sudo gatttool -b {BT MAC address} --char-write-req -a 0x001e -n 41542b57414b4550554c53453d31300d0a
+``` 
 
 `0x001e` is the Bluetooth characteristic to enable wifi. `41542b57414b4550554c53453d31300d0a` is the hex representation of `AT+WAKEPULSE=10\r\n`. The line ending is critical for the wifi to spin up.
 
