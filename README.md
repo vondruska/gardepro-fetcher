@@ -1,5 +1,5 @@
 # gardepro-fetcher
-I have a GardePro E9P trailcam on my property to keep an eye on wildlife. When no device is connected, the camera is always advertising via Bluetooth LE. Using the GardePro mobile app, it will scan for Bluetooth devices, find the camera, connect to the camera via Bluetooth, send a command that enables wifi, disconnect from Bluetooth, connect to the newly visible wifi network.
+I have a [GardePro E9P trailcam](https://gardepro.com/products/gardepro-wifi-trail-camera-e9p-with-rechargeable-battery) on my property to keep an eye on wildlife. When no device is connected, the camera is always advertising via Bluetooth LE. Using the GardePro mobile app, it will scan for Bluetooth devices, find the camera, connect to the camera via Bluetooth, send a command that enables wifi, disconnect from Bluetooth, connect to the newly visible wifi network.
 
 I want to be able to pull images off the camera in an automated fashion. This repo will house a script/application to accomplish this. At this moment, it's research documentation. 
 
