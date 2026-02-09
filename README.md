@@ -63,6 +63,26 @@ Discovered endpoints:
 |`GET /cmd/info/2`  |Gets sensor and power info (temperature, voltage, vol_value, ext_power)    | 
 |`GET /cmd/info/3`   |Gets SD storage information (total space, used, photos/video count)   |
 |`GET /cmd/info/4`  |Gets time (clock, timezone)|
-|`GET /cmd/standby/reset` | Keep-alive to prevent camera from shuttung down wifi network (see above) | 
+|`GET /cmd/info/5` |Gets detailed version strings|
+|`GET /cmd/standby/now`|Put camera to sleep |
+|`GET /cmd/standby/reset` |Keep-alive to prevent camera from shuttung down wifi network (see above) |
+|`GET /cmd/getSetting` |Get camera settings |
+|`GET /cmd/getParaSetting` |Get valid options for settings |
+|`POST /cmd/setSetting` | `{"data": {"key": val}}` |
+|`POST /cmd/setGmtClock` | `{"data": "yyyy-MM-dd HH:mm:ss"}` |
+|`POST /cmd/setGmtClock2` | `{"data": "yyyy-MM-dd HH:mm:ss"}` |
+|`GET /cmd/reboot` |Reboots |
+|`GET /cmd/resetFact` |Factor reset |
+|`GET /cmd/format/start` |Format SD card |
+|`GET /cmd/format/result` |Result of formatting |
+|`GET /cmd/delete/{id}/{JPG\|MP4}` |Delete image or video |
+|`GET /list/detail/{type}/{startId}/{count}` |List files  |
+|`GET /file/{id}/{JPG\|MP4}` |Download full-resolution file |
+|`GET /thumb/{id}/{JPG\|MP4}` |Download thumbnail |
+|`POST /media/pic/take` |Remote picture capture |
+|`POST /media/pic/result` |Result of picture capture |
+|`POST /media/video/start` |Remote video start |
+|`POST /media/video/stop` |Remote video stop |
+|`GET /media/getIrStatus` |Get IR Status |
+|`POST /media/setDayNightMode` | `{"data": {"DayNightMode": val}}` |Set day / night mode |
 
-To be documented, image/video downloads.
