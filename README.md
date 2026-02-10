@@ -72,7 +72,7 @@ Discovered endpoints:
 |`POST /cmd/setGmtClock` | `{"data": "yyyy-MM-dd HH:mm:ss"}` |
 |`POST /cmd/setGmtClock2` | `{"data": "yyyy-MM-dd HH:mm:ss"}` |
 |`GET /cmd/reboot` |Reboots |
-|`GET /cmd/resetFact` |Factor reset |
+|`GET /cmd/resetFact` |Factory reset |
 |`GET /cmd/format/start` |Format SD card |
 |`GET /cmd/format/result` |Result of formatting |
 |`GET /cmd/delete/{id}/{JPG\|MP4}` |Delete image or video |
